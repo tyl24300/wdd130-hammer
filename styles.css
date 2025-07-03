@@ -24,6 +24,10 @@ nav a {
   margin-left: left;
 }
 
+.list {
+  height: 100%;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
