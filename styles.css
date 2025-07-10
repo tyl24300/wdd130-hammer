@@ -1,14 +1,20 @@
 body {
     margin: 0;
+    font-family: Geller, sans-serif;
+    height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 .topnav {
-  display: block;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
   background-color: #e9e9e9;
   width: 80%;
-  text-align: auto;
-  margin: 0 auto;
   border: 3px solid rgb(199, 198, 198);
 }
 
@@ -20,7 +26,7 @@ body {
   margin-right: auto;
   float: left;
   background-color: #e9e9e9;
-  border-radius: 60%;
+  border-radius: 50%;
   border: 3px solid rgb(199, 198, 198);
 }
 
@@ -29,7 +35,10 @@ nav a {
 }
 
 .list {
-  height: 100%;
+  background-color: #e9e9e9;
+  padding: 10px;
+  border: 3px solid #c7c6c6;
+  height: fit-content;
 }
 
 ul {
@@ -46,23 +55,35 @@ ul {
 
 
 li a {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   width: 60px;
   height: 100%;
   background-color: #dddddd;
+  display: inline-block;
+  height: 100%;
 }
 
 .content {
   display: grid;
-  grid-template-columns: 200px 1fr 1fr 1fr;
-  height: 100vh;
+  grid-template-columns: 200px 1fr 300px 1fr;
+  grid-template-rows: 1fr;
   gap: 20px;
-  align-items: start;
+  padding: 20px;
+  height: 100%;
+  align-items: stretch;
 }
 
 .image {
-  height: 400px;
-  width: 600px;
-  grid-column: 2/2;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-self: justify;
+  max-height: 700px;
+  max-width: 200px;
+  box-sizing: border-box;
 }
 
 .block {
@@ -71,11 +92,24 @@ li a {
 }
 
 .textbox {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-items: center;
+    font-size: 25px;
+    margin: auto;
     background-color: #e9e9e9;
     border: 3px solid rgb(199, 198, 198);
+    height: 100%;
 }
 
 .textbox2 {
+    display: grid;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    align-items: center;
+    font-size: 25px;
     background-color: #e9e9e9;
     border: 3px solid rgb(199, 198, 198);
+    height: 100%;
 }
