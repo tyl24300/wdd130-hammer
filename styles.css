@@ -171,3 +171,90 @@ font-family: geller-headline, serif;
 font-style: normal;
 font-weight: 300;
 }
+
+
+/* comment I tried to get it to match the color schieme for the about_us page (tanner) */
+.about_us {
+    margin: 0;
+    padding: 0;
+    font-family: geller-headline, serif;
+    font-style: normal;
+    font-weight: 300;
+    height: 100%;
+    background-color: #596157;
+}
+
+.textbox_about_us {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    align-items: center;
+    font-size: 30px;
+    line-height: 2.5;
+    margin: 0;
+    background-color: #6A9669;
+    border: 3px solid #51584F;
+    height: 100%;
+    padding: 10px;
+    color: black;
+    margin-bottom: 20px;
+}
+.topnav_about_us{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 20%;
+  background-color: #5B8C5A;
+  width: 80%;
+  border: 3px solid #51584F;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.topnav_about_us h2 {
+  font-size: 30px;
+}
+.list_about_us {
+  border: 3px solid #51584F;
+  padding: 10px;
+  height: fit-content;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #5B8C5A;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.list_about_us ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  line-height: 40px;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list_about_us li a {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100px;
+  height: 100%;
+  background-color: #51584F;
+  display: inline-block;
+  height: 100%;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.list_about_us li a:hover{
+  background-color: #6A9669;
+}
